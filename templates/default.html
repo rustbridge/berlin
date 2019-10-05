@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1" />
+   <title>{% block title %}{% endblock %}</title>
+   <meta name="author" content="RustBridge Berlin" />
+   <meta name="description" content="The Berlin chapter of RustBridge.">
+   <meta property="og:type" content="website"/>
+   <meta property="og:image" content=""/>
+   <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+</head>
+<body>
+    <main class="mw8 ph2 center">
+       {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
