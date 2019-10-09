@@ -1,8 +1,8 @@
-{% extends "default.html" %}
+---
+title: RustBridge Berlin
+layout: default
+---
 
-{% block title %}RustBridge Berlin{% endblock title %}
-
-{% block content %}
 <h1 class="f1 athelas">RustBridge Berlin</h1>
 <p class="lh-copy f3 measure athelas">
     This is the chapter website of RustBridge Berlin. RustBridge is a workshop program to
@@ -11,9 +11,19 @@
     and teachers.
 </p>
 
+<h1 class="f2 athelas">Next event</h1>
+<p class="lh-copy f3 measure athelas">
+    {% assign firstevent = site.events | sort: 'date' | first %}
+    The next event is <strong>{{ firstevent.title }}</strong>, which is held at <strong>{{ firstevent.eventvenue }}</strong>
+    on <strong>{{ firstevent.eventdate }}</strong>.
+</p>
+
+<a class="lh-copy f2 measure athelas link ba b--blue pa3 mb3 dib blue" href="{{ firstevent.url }}">
+    More info here
+</a>
+
 <p class="lh-copy f3 measure athelas">
     We are still in the early stages of setting up. If you are interested in hearing more, follow the
     <a href="https://twitter.com/rustbridge" class="link blue">RustBridge Twitter account</a>, and
-    if you want to get involved, please <a href="/cdn-cgi/l/email-protection#caa8afb8a6a3a48ab8bfb9bea8b8a3aeadafe4a9a5a7" class="link blue">email us</a>.
+    if you want to get involved, please <a href="mailto:berlin@rustbridge.com" class="link blue">email us</a>.
 </p>
-{% endblock %}

@@ -1,0 +1,8 @@
+markdown: "kramdown"
+permalink: "pretty"
+future: true
+
+collections:
+  events:
+    output: true
+    permalink: /:collection/:path
