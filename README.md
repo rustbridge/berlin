@@ -5,8 +5,7 @@ website](https://berlin.rustbridge.com).
 
 ### Local Setup
 
-You will need to have [Zola](https://www.getzola.org/) installed. Usually, this
-is as simply as downloading a binary and placing it in your PATH.
+You will need to have [Jekyll](https://www.jekyllrb.com) installed. 
 
 With that, clone the repository:
 
@@ -14,8 +13,15 @@ With that, clone the repository:
 git clone https://github.com/rustbridge/berlin.git
 ```
 
-After which you can work on the site by running Zola's local server:
+Install the local dependencies:
 
 ``` shell
-zola serve
+gem install bundler
+bundle install
+```
+
+After which you can work on the site by running Jekyll's local server:
+
+``` shell
+bundle exec jekyll serve --livereload
 ```

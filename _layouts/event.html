@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<h1 class="f1 athelas">{{ page.title }}</h1>
+
+<ul class="f2 pl0 lh-copy athelas measure list">
+    <li><strong>When</strong>: {{ page.eventdate }}</li>
+    <li><strong>Where</strong>: {{ page.eventvenue }}</li>
+</ul>
+
+<a class="lh-copy f2 measure athelas link ba b--blue pa3 mb3 dib grow blue" href="{{ page.eventurl }}">
+    RSVP here!
+</a>
+
+{{ content }}

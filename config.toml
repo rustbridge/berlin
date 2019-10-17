@@ -1,6 +1,0 @@
-base_url = "https://berlin.rustbridge.com"
-compile_sass = false
-highlight_code = false
-build_search_index = false
-
-[extra]
