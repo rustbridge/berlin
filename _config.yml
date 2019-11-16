@@ -2,6 +2,20 @@ markdown: "kramdown"
 permalink: "pretty"
 future: true
 
+sass:
+  style: :compressed
+
+links:
+  material:
+    RustBridge: "https://rustbridge.com"
+    Rustlings: "https://github.com/rust-nursery/rustlings"
+    Presentation: "#"
+    Rust-lang.org: "https://rust-lang.org"
+  contact:
+    Email: "mailto:"
+    Twitter: "https://twitter.com/"
+    "Code of Conduct": "https://rustbridge.com/conduct"
+
 collections:
   events:
     output: true

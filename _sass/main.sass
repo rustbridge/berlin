@@ -1,0 +1,46 @@
+$orange: #e04e00;
+$darkorange: #c10000;
+
+
+a:not(.logo)
+  text-decoration: none
+  color: $darkorange
+  &:hover,
+  &:active,
+  &:focus
+    border-bottom: 1px solid $darkorange
+
+li
+  margin-bottom: .5em
+
+main
+  background-color: $orange
+  overflow: hidden
+
+.main
+  transform: rotate(-45deg)
+  background-color: white
+
+.footer
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  > div
+    flex: 1 1 15em
+
+.bg
+  background-color: $orange
+  background-image: url(../assets/rust-logo-blk.svg)
+  background-blend-mode: overlay
+  background-size: 21%
+  background-position: -5% 0
+  transform: rotate(45deg)
+
+.button
+  border: 1px solid $darkorange
+  transition: color 120ms ease, background-color 120ms ease, font-size 120ms ease
+  &:hover,
+  &:active,
+  &:focus
+    background-color: $orange
+    color: white
