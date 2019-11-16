@@ -30,11 +30,20 @@ main
 
 .bg
   background-color: $orange
-  background-image: url(../assets/rust-logo-blk.svg)
+  background-image: url(../assets/rust-bg.png)
   background-blend-mode: overlay
-  background-size: 21%
-  background-position: -5% 0
+  background-size: 13%
+  background-position: -9% -5%
   transform: rotate(45deg)
+  animation: slowmove infinite 60s linear
+  animation-direction: alternate-reverse
+
+
+@keyframes slowmove
+  0%
+    background-position: 50% -50%
+  100%
+    background-position: -50% 50%
 
 .button
   border: 1px solid $darkorange
