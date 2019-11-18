@@ -8,12 +8,12 @@ sass:
 links:
   material:
     RustBridge: "https://rustbridge.com"
-    Rustlings: "https://github.com/rust-nursery/rustlings"
+    Rustlings: "https://github.com/rust-lang/rustlings"
     Presentation: "https://intro.rustbridge.com"
     Rust-lang.org: "https://rust-lang.org"
   contact:
     Email: "mailto:berlin@rustbridge.com"
-    Twitter: "https://twitter.com/"
+    Twitter: "https://twitter.com/rustbridgebln"
     "Code of Conduct": "https://rustbridge.com/conduct"
 
 collections:
