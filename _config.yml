@@ -9,10 +9,10 @@ links:
   material:
     RustBridge: "https://rustbridge.com"
     Rustlings: "https://github.com/rust-nursery/rustlings"
-    Presentation: "#"
+    Presentation: "https://intro.rustbridge.com"
     Rust-lang.org: "https://rust-lang.org"
   contact:
-    Email: "mailto:"
+    Email: "mailto:berlin@rustbridge.com"
     Twitter: "https://twitter.com/"
     "Code of Conduct": "https://rustbridge.com/conduct"
 
