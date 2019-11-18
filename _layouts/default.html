@@ -1,18 +1,48 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-<head>
-   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   <meta name="viewport" content="width=device-width,initial-scale=1" />
-   <title>{{ page.title }}</title>
-   <meta name="author" content="RustBridge Berlin" />
-   <meta name="description" content="The Berlin chapter of RustBridge.">
-   <meta property="og:type" content="website"/>
-   <meta property="og:image" content=""/>
-   <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
-</head>
-<body>
-    <main class="mw8 ph2 center">
-        {{ content }}
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{{ page.title }}</title>
+    <meta name="author" content="RustBridge Berlin" />
+    <meta name="description" content="The Berlin chapter of RustBridge.">
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content=""/>
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+    <link rel="stylesheet" href="{{ site.url }}/css/main.css">
+    <link rel="shortcut icon" type="image/png" href="{{ site.url }}/assets/favicon.png">
+
+  </head>
+  <body>
+    <main>
+      <div class="bg">
+        <div class="mw8 ph4 pt2 pb4 mv4 center main">
+          {{ content }}
+        </div>
+      </div>
     </main>
-</body>
+    <footer class="mt4 mb2">
+      <div class="mw8 ph2 center footer">
+        <div class="">
+          <a href="{{site.url}}/" title="RustBridge Berlin" class="logo"><img src="{{ site.url }}/assets/RustBridgeBerlin.png" alt="RustBridge Berlin logo" width="250"></a>
+        </div>
+        <div>
+          <h3>Material</h3>
+          <ul>
+            {% for link in site.links.material %}
+            <li><a href="{{ link[1] }}">{{ link[0] }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            {% for link in site.links.contact %}
+            <li><a href="{{ link[1] }}">{{ link[0] }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
