@@ -1,6 +1,25 @@
-$orange: #e04e00;
-$darkorange: #c10000;
+$orange: #e04e00
+$darkorange: #c10000
 
+@font-face
+  font-family: 'vampiro_oneregular'
+  src: url('/assets/vampiroone_regular_macroman/VampiroOne-Regular-webfont.woff') format('woff')
+  font-weight: normal
+  font-style: normal
+
+
+body,
+html
+  font-family: sans-serif
+  line-height: 1.65
+
+h1, h2, h3, h4
+  font-family: vampiro_oneregular
+
+.page-title
+  font-size: 4rem
+  transform: rotate(-16deg)
+  text-align: center
 
 a:not(.logo)
   text-decoration: none
@@ -27,6 +46,13 @@ main
   flex-wrap: wrap
   > div
     flex: 1 1 15em
+    margin-top: -2rem
+
+  h3
+    transform: rotate(-16deg)
+    margin-bottom: 2rem
+  h3 + ul
+    margin-left: 2rem
 
 .bg
   background-color: $orange
@@ -38,6 +64,9 @@ main
   animation: slowmove infinite 60s linear
   animation-direction: alternate-reverse
 
+
+.page-title
+  font-size: 4rem
 
 @keyframes slowmove
   0%
