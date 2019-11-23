@@ -3,26 +3,26 @@ title: RustBridge Berlin
 layout: default
 ---
 
-<h1 class="f1 athelas">RustBridge Berlin</h1>
-<p class="lh-copy f3 measure athelas">
+<h1 class="page-title">RustBridge<br>Berlin</h1>
+<p class="f3 measure">
     This is the chapter website of RustBridge Berlin. RustBridge is a workshop program to
     teach people from underrepresented backgrounds <a href="https://rust-lang.org">Rust</a>,
     and RustBridge Berlin forms a regional chapter, that is, a local group of workshop organizers
     and teachers.
 </p>
 
-<h1 class="f2 athelas">Next event</h1>
-<p class="lh-copy f3 measure athelas">
+<h1 class="f2">Next event</h1>
+<p class="f3 measure">
     {% assign firstevent = site.events | sort: 'date' | first %}
     The next event is <strong>{{ firstevent.title }}</strong>, which is held at <strong>{{ firstevent.eventvenue }}</strong>
     on <strong>{{ firstevent.eventdate }}</strong>.
 </p>
 
-<a class="lh-copy f2 measure athelas pa3 mb3 dib button" href="{{ firstevent.url }}">
+<a class="f2 measure pa3 mb3 dib button" href="{{ firstevent.url }}">
     More info here
 </a>
 
-<p class="lh-copy f3 measure athelas">
+<p class="f3 measure">
     If you are interested in hearing more, follow the
     <a href="https://twitter.com/rustbridge">RustBridge Twitter account</a>, and
     if you want to get involved, please <a href="mailto:berlin@rustbridge.com">email us</a>.
