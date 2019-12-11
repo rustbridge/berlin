@@ -9,7 +9,7 @@ links:
   material:
     Presentation: "https://intro.rustbridge.com"
     Rustlings: "https://github.com/rust-lang/rustlings"
-    RustySnakeBook: "https://github.com/rustbridge/rusty-snake-book"
+    RustySnakeBook: "https://snake.rustbridge.com/"
     Rust-lang.org: "https://rust-lang.org"
   contact:
     RustBridge: "https://rustbridge.com"
