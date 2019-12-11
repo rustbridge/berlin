@@ -9,8 +9,17 @@ layout: default
     <li><strong>Where</strong>: {{ page.eventvenue }}</li>
 </ul>
 
-<a class="f2 measurelink pa3 mb3 dib grow button" href="{{ page.eventurl }}">
-    RSVP here!
-</a>
+{% if page.date < site.time %}
 
-{{ content }}
+<p class="f2 bg-orange pa2">Please note that this event is over!</p>
+
+{% else  %}
+<a class="f2 measurelink pa3 mb3 dib grow button" href="{{ page.eventurl }}">
+  RSVP here!
+</a>
+{% endif %}
+
+
+<div class="measure lh-copy f3">
+  {{ content }}
+</div>

@@ -11,16 +11,32 @@ layout: default
     and teachers.
 </p>
 
-<h1 class="f2">Next event</h1>
-<p class="f3 measure">
-    {% assign firstevent = site.events | sort: 'date' | first %}
-    The next event is <strong>{{ firstevent.title }}</strong>, which is held at <strong>{{ firstevent.eventvenue }}</strong>
-    on <strong>{{ firstevent.eventdate }}</strong>.
-</p>
+<h2 class="f2">Next event</h2>
 
-<a class="f2 measure pa3 mb3 dib button" href="{{ firstevent.url }}">
+
+{% assign  firstevent = site.events | where_exp: "event", "event.date  >=  site.time" | first %}
+{% if firstevent %}
+<p class="f3 measure">
+  The next event is <strong>{{ firstevent.title }}</strong>, which is held at <strong>{{ firstevent.eventvenue }}</strong>
+    on <strong>{{ firstevent.eventdate }}</strong>.</p>
+
+<p><a class="f2 measure pa3 mb3 dib button" href="{{ firstevent.url }}">
     More info here
-</a>
+</a></p>
+
+{% else %}
+<p class="f3 measure">There are no events planned at the moment.</p>
+{% endif %}
+
+
+<h2 class="f2">Past events</h2>
+<ul>
+  {% assign events = site.events | where_exp: "event", "event.date  <  site.time" %}
+  {% for event in events %}
+  <li class="f3"><a href="{{ event.url }}">{{event.title}}</a></li>
+  {% endfor %}
+</ul>
+
 
 <p class="f3 measure">
     If you are interested in hearing more, follow the
