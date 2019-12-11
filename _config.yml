@@ -7,11 +7,12 @@ sass:
 
 links:
   material:
-    RustBridge: "https://rustbridge.com"
-    Rustlings: "https://github.com/rust-lang/rustlings"
     Presentation: "https://intro.rustbridge.com"
+    Rustlings: "https://github.com/rust-lang/rustlings"
+    RustySnakeBook: "https://github.com/rustbridge/rusty-snake-book"
     Rust-lang.org: "https://rust-lang.org"
   contact:
+    RustBridge: "https://rustbridge.com"
     Email: "mailto:berlin@rustbridge.com"
     Twitter: "https://twitter.com/rustbridgebln"
     "Code of Conduct": "https://rustbridge.com/conduct"
